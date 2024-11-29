@@ -1,20 +1,38 @@
+<link rel="stylesheet" href="login.component.css">
 
-<div class="centralizar">
+<section class="body">
+        <form action="conteiner">
+             <div class="conteiner">
+                <h1 class="titulo">LOGIN</h1>
+                <p class="cor">Faça login para prosseguir</p>
 
-<div class="cabecalho">
-<h1>Login</h1>
-<p>Faça login para continuar</p>
-</div>
+                <section class="input-box">
+                    <label class="nome" for="email">Email:</label>
+                    <input type="text" name="email" placeholder="Digite seu email">
+                </section>
 
-<label for="nome">Nome:</label>
-<input type="nome" name="nome" id="nome">
-<label for="senha">Senha:</label>
-<input type="senha" name="senha" id="senha">
+                <section class="input-box">
+                <label class="nome" for="senha">Senha:</label>
+                <input type="password" name="password" placeholder="Digite sua senha">
+                </section>
 
-<button>Entrar</button>
+                <section class="lembrar-me">
+                    <div class="lembrar-me">
+                        <input type="checkbox" name="lembrar" id="lembrar">
+                        <label for="lembrar-me">Lembrar-me</label>
+                    </div>
 
-<button>Criar Conta</button>
+                    <button (click)="navegar()" class="login">
+                        LOGIN
+                    </button>
+                    <button class="criar" type="submit">
+                        CRIAR CONTA
+                    </button>
 
-<p>Esqueceu sua senha?</p>
-
-</div>
+                    <a class="esqueceu-senha" href="#">
+                        <h5>Esqueceu sua senha?</h5>
+                    </a>
+                </section>
+            </div>
+        </form>
+</section>
